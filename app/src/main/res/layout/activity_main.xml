@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".MainActivity">
+
+        <!-- 头部标题 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="艾宾浩斯记忆助手"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 备注输入 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="事件备注"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入艾宾浩斯事件备注"
+            android:text="背英语第一单元单词"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 按钮区域 -->
+        <Button
+            android:id="@+id/btn_main_add"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="添加艾宾浩斯事件"
+            android:textSize="16sp"
+            android:background="@drawable/button_primary"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btn_main_delete"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="删除艾宾浩斯事件"
+            android:textSize="16sp"
+            android:background="@drawable/button_secondary"
+            android:textColor="#1A237E"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btn_main_update"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="更新艾宾浩斯事件"
+            android:textSize="16sp"
+            android:background="@drawable/button_secondary"
+            android:textColor="#1A237E"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btn_main_query"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="查询艾宾浩斯事件"
+            android:textSize="16sp"
+            android:background="@drawable/button_outline"
+            android:textColor="#1A237E"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="打开系统日历自定义编辑"
+            android:textSize="16sp"
+            android:background="@drawable/button_outline"
+            android:textColor="#1A237E"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="检查今日事件是否存在"
+            android:textSize="16sp"
+            android:background="@drawable/button_outline"
+            android:textColor="#1A237E"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 事件显示区域 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="事件列表"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="120dp"
+            android:textSize="14sp"
+            android:padding="16dp"
+            android:background="@drawable/textview_background"
+            android:textColor="#666666"
+            android:lineSpacingExtra="4dp"
+            tools:text="事件列表将显示在这里\n• 示例事件1\n• 示例事件2" />
+
+    </LinearLayout>
+</ScrollView>
